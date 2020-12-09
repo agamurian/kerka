@@ -1,0 +1,107 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monsterrat">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro">
+    <style>
+    body,h1,h2,h4,h5 {font-family: "Montserrat", sans-serif;font-weight: bold;}
+    h3,p {font-family: Source Code Pro Semibold; margin-left: 25px;}
+    p {font-size: 1.1em;}
+    hr {border-top: 5px dashed black; margin-top: 25px;}
+    .datepost {font-size: 15px; text-align: right; margin-top: -15px; margin-bottom: -20px;}
+    .w3-image,.w3-col {padding: 7px;}
+    .w3-image {padding-bottom: 21px;}
+    </style>
+    <title>kerka | art gallery</title>
+</head>
+<body>
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:35px">
+    <div class="w3-row khead">
+        <div class="w3-col m2 s3">
+           <img src="./static/img/kerka_logo_trimmed.png" alt="kerka_logo" class="w3-image" style="position: static;">
+        </div>
+    
+       <div class="w3-col m1 s12"><p><p></div>
+            <div class="w3-col m8 s12">
+                <div class="w3-row" style="margin-top: -5px;font-size: 2.5vmin;"><b>
+                
+                    <div class="w3-col m4 s6" style="text-align: right;"><a href="./index.html">news</a></div>
+                    <div class="w3-col m4 s6" style="text-align: right;"><a href="./about.html">about</a></div>
+                    <div class="w3-col m4 s6" style="text-align: right;">contacts</div>
+                </div></b>
+            </div>
+       
+      <!--
+       <div class="w3-col m1 s12" style="margin-top: -15px;font-size: 1.5vmin;text-align: right;"><p><a href="/ru">ru</a> <a href="/en">en</a> </p></div>
+      --> 
+    </div>
+    <div class="w3-row">
+        <div class="w3-col m1 s1"><p></div>
+            <div class="w3-col m10 s12">
+                    <div class="w3-col m6 s12">
+                <h3>Санкт-Петербург, Суворовский 43-45а</h3>
+                <div id="mapid" style="height: 400px;"></div>
+<script>
+	var mymap = L.map('mapid').setView([59.93921, 30.37837], 13);
+
+	L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+		maxZoom: 22,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+		id: 'mapbox/streets-v11',
+		tileSize: 512,
+		zoomOffset: -1
+	}).addTo(mymap);
+
+	L.marker([59.93921, 30.37837]).addTo(mymap)
+		.bindPopup("<b>Kerka Gallery</b>").openPopup();
+
+	var popup = L.popup();
+
+	function onMapClick(e) {
+		popup
+			.setLatLng(e.latlng)
+			.setContent("You clicked the map at " + e.latlng.toString())
+			.openOn(mymap);
+	}
+
+	mymap.on('click', onMapClick);
+
+</script>
+</div>
+                    <div class="w3-col m6 s12">
+                <h2><a href="https://www.instagram.com/kerka.gallery/">@kerka.gallery</a></h2> 
+                <div class="w3-row">
+                    <div class="w3-col l6 m12">
+                        <h4>Andrei</h4>
+                         <p>mail: <a href="mailto:ag-3d@ya.ru">ag-3d@ya.ru</a></p>
+                          <p>telegram: @agamurian</p>
+                          <p>+79967909648</p>
+                    </div>
+                    <div class="w3-col l6 m12 s12">
+                        <h4>Anastasy</h4>
+                         <p>mail: <a href="mailto:a-razmanova@mail.ru">a-razmanova@mail.ru</a></p>
+                          <p>+79505656420</p>
+                    </div>
+                </div>
+
+</div>
+                </div>
+                <br>
+            </div>
+        <div class="w3-col m1 s1"></div>
+    </div>
+
+</div>
+
+</body>
+</html>
