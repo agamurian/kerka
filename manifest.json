@@ -10,7 +10,7 @@
   ],
   "start_url": "/events",
   "display": "standalone",
-  "theme_color": "#666600",
+  "theme_color": "#000000",
   "background_color": "#ffffff",
   "screenshots": [
     {
