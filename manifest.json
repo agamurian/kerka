@@ -8,7 +8,7 @@
     "art",
     "education"
   ],
-  "start_url": "kerka.gallery",
+  "start_url": "/events",
   "display": "standalone",
   "theme_color": "#666600",
   "background_color": "#ffffff",
