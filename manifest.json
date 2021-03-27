@@ -1,0 +1,96 @@
+{
+  "name": "Kerka",
+  "short_name": "Kerka",
+  "description": "Gallery in Saint-Petersburg",
+  "lang": "ru-RU",
+  "dir": "auto",
+  "categories": [
+    "art",
+    "education"
+  ],
+  "start_url": "kerka.gallery",
+  "display": "standalone",
+  "theme_color": "#666600",
+  "background_color": "#ffffff",
+  "screenshots": [
+    {
+      "src": "src/screenshot1.png",
+      "sizes": "1280x720",
+      "type": "image/png"
+    }
+  ],
+  "icons": [
+    {
+      "src": "assets/static/favicon-512x512.svg",
+      "type": "image/svg",
+      "sizes": "512x512",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/static/favicon-384x384.svg",
+      "type": "image/svg",
+      "sizes": "384x384",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/static/favicon-192x192.svg",
+      "type": "image/svg",
+      "sizes": "192x192",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/static/favicon-180x180.svg",
+      "type": "image/svg",
+      "sizes": "180x180",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/static/favicon-152x152.svg",
+      "type": "image/svg",
+      "sizes": "152x152",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/static/favicon-144x144.svg",
+      "type": "image/svg",
+      "sizes": "144x144",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/static/favicon-128x128.svg",
+      "type": "image/svg",
+      "sizes": "128x128",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/static/favicon-120x120.svg",
+      "type": "image/svg",
+      "sizes": "120x120",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/static/favicon-96x96.svg",
+      "type": "image/svg",
+      "sizes": "96x96",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/static/favicon-72x72.svg",
+      "type": "image/svg",
+      "sizes": "72x72",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/static/favicon-48x48.svg",
+      "type": "image/svg",
+      "sizes": "48x48",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/static/favicon-16x16.svg",
+      "type": "image/svg",
+      "sizes": "16x16",
+      "purpose": "maskable any"
+    }
+  ]
+}
